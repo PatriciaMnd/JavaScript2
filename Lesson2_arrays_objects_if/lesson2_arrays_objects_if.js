@@ -123,10 +123,9 @@ let user10 = {
 console.log(user10.password)
 
 // ------------------------------------------------------------------------------------------------------------------//
-
 let weather = [
-    {day: 'monday', morningTemp:+15,noonTemp:+23,eveningTemp:+17},
-    {day: 'tuesday', morningTemp:+16,noonTemp:+24,eveningTemp:+19},
+    {day: 'monday',morningTemp:+15,noonTemp:23,eveningTemp:17},
+    {day: 'tuesday',  morningTemp:+16,noonTemp:+24,eveningTemp:+19},
     {day: 'wednesday', morningTemp:+14,noonTemp:+21,eveningTemp:+16},
     {day: 'thursday', morningTemp:+14,noonTemp:+22,eveningTemp:+18},
     {day: 'friday', morningTemp:+16,noonTemp:+19,eveningTemp:+15},
@@ -217,3 +216,23 @@ switch (dayOfweek){
 }
 
 // --------------------------------------------------------------------------------------------------------------//
+let firstNumberInput = prompt('Enter the first number');
+let secondNumberInput = prompt('Enter the second number');
+
+let firstNumber=parseInt(firstNumberInput);
+let secondNumber= parseInt(secondNumberInput);
+
+let maxNumber= firstNumber;
+if (secondNumber > firstNumber) {
+    maxNumber = secondNumber;
+}
+console.log(maxNumber + " is bigger")
+
+// ----------------------------------------------------------------------------------------------------------------//
+
+let n = 0;
+if ( n === 0 || n === false || n === undefined){
+    console.log('falsy')
+} else{
+    console.log('true')
+}
