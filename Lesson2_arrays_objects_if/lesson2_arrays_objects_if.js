@@ -125,14 +125,95 @@ console.log(user10.password)
 // ------------------------------------------------------------------------------------------------------------------//
 
 let weather = [
-    {day: 'Monday', morningTemp:+15,noonTemp:+23,eveningTemp:+17},
-    {day: 'Tuesday', morningTemp:+16,noonTemp:+24,eveningTemp:+19},
-    {day: 'Wednesday', morningTemp:+14,noonTemp:+21,eveningTemp:+16},
-    {day: 'Thursday', morningTemp:+14,noonTemp:+22,eveningTemp:+18},
-    {day: 'Friday', morningTemp:+16,noonTemp:+19,eveningTemp:+15},
-    {day: 'Saturday', morningTemp:+11,noonTemp:+15,eveningTemp:+14},
-    {day: 'Sunday', morningTemp:+10,noonTemp:+15,eveningTemp:+12}
+    {day: 'monday', morningTemp:+15,noonTemp:+23,eveningTemp:+17},
+    {day: 'tuesday', morningTemp:+16,noonTemp:+24,eveningTemp:+19},
+    {day: 'wednesday', morningTemp:+14,noonTemp:+21,eveningTemp:+16},
+    {day: 'thursday', morningTemp:+14,noonTemp:+22,eveningTemp:+18},
+    {day: 'friday', morningTemp:+16,noonTemp:+19,eveningTemp:+15},
+    {day: 'saturday', morningTemp:+11,noonTemp:+15,eveningTemp:+14},
+    {day: 'sunday', morningTemp:+10,noonTemp:+15,eveningTemp:+12}
 ]
 console.log(weather)
 
 // ------------------------------------------------------------------------------------------------------------------//
+
+let x = 9
+if (x !== 0){
+    console.log('correct')
+}else{
+    console.log('incorrect')
+}
+let a = 1
+if (a !== 0){
+    console.log('correct')
+}else{
+    console.log('incorrect')
+}
+let b = 0
+if (b !== 0){
+    console.log('correct')
+}else{
+    console.log('incorrect')
+}
+let c = -3
+if (c !== 0){
+    console.log('correct')
+}else{
+    console.log('incorrect')
+}
+
+// -----------------------------------------------------------------------------------------------------------------//
+
+let time = 36
+if (time === 0 && time <= 14){
+console.log('first quarter')
+} else if (time >= 15 && time <= 30){
+    console.log('second quarter')
+}else if (time >= 31 && time <=45){
+    console.log('third quarter')
+}else if (time >=46 && time <=59){
+    console.log('quarter quarter')
+}
+
+// -----------------------------------------------------------------------------------------------------------------//
+
+let day = 16
+if (day === 1 && day <10){
+    console.log('first decade of the month')
+}else if (day >11 && day <20){
+    console.log('second decade of the month')
+}else if (day >21 && day <=31){
+    console.log('third decade of the month')
+}
+
+// -------------------------------------------------------------------------------------------------------------//
+
+let dayOfweek = prompt('Enter the day of the week');
+
+switch (dayOfweek){
+    case'Monday':
+        console.log ('9am mathematics/','11am english/','1pm lunch');
+        break;
+    case'Tuesday':
+        console.log ('10am computer science/','12am music/','2pm chemistry');
+        break;
+    case 'Wednesday':
+        console.log ('9am physics/','11:30am art/','1pm lunch');
+        break;
+    case 'Thursday':
+        console.log ('2pm history/','3pm literature/','5pm english');
+        break;
+    case'Friday':
+        console.log ('9am biology/','11am geography');
+        break;
+    case'Saturday':
+        console.log ('day off');
+        break;
+    case'Sunday':
+        console.log ('day off');
+        break;
+    default:
+        console.log('nothing')
+}
+
+// --------------------------------------------------------------------------------------------------------------//
