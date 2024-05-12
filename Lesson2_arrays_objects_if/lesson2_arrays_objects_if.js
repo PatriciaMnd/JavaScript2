@@ -232,7 +232,9 @@ console.log(maxNumber + " is bigger")
 
 let n = 0;
 if ( n === 0 || n === false || n === undefined){
-    console.log('falsy')
+    console.log('default')
 } else{
     console.log('true')
 }
+
+// -----------------------------------------------------------------------------------------------------------------//
