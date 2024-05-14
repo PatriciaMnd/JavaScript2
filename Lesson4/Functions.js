@@ -111,6 +111,16 @@ classmates(789,'David',16);
 
 console.log('')
 // - створити функцію яка повертає найменьше число з масиву
+function smallestNumber (array){
+    let i = Math.min (array[0]);
+    console.log(i);
+}
+let arrayOfNumbers1 = [26,97,85,43,61,22,10,78,46,58];
+let arrayOfNumbers2 = [87,91,34,56,88,80,0,23,34,77];
+let arrayOfNumbers3 = [174,620,348,246,977,480,510];
+smallestNumber(arrayOfNumbers1);
+smallestNumber(arrayOfNumbers2);
+smallestNumber(arrayOfNumbers3);
 
 
 console.log('')
@@ -128,3 +138,4 @@ function sum(){
 console.log(sum(17,92,64,75,30));
 console.log(sum(44,90,2,18,57,85));
 console.log(sum(21,32,54,65,87,98,1));
+
