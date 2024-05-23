@@ -152,4 +152,17 @@ console.log('')
 //     hearts:[],
 //     clubs:[]
 // }
-
+let reduce = koloda.reduce((distributor, card) => {
+    console.log(card);
+    if (card.cardSuit === 'spade') {
+        distributor.spades.push(card);
+    } else if (card.cardSuit === 'diamond') {
+        distributor.diamonds.push(card);
+    } else if (card.cardSuit === 'heart'){
+        distributor.hearts.push(card);
+    } else if (card.cardSuit === 'clubs') {
+        distributor.clubs.push(card);
+    }
+    return distributor;
+}, {spades: [], diamonds: [], hearts: [], clubs: []});
+console.log(reduce);
